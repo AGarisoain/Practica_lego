@@ -14,7 +14,7 @@ public class LegoQuest {
             System.out.println("Escoja una opción:");
             System.out.println("1-Elegir Jugetes");
             System.out.println("2-Adivinar Jugetes");
-            System.out.println("3- Salir del programa.");
+            System.out.println("3-Salir del programa.");
             opcion = sc.nextInt();
             controlaropcion(opcion);
        }while(opcion != 3);    
