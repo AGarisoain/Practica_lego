@@ -4,10 +4,6 @@ public class LegoQuest {
 
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
-<<<<<<< HEAD
-        System.out.println("alo");
-        System.out.println("aaaaa");
-=======
        LegoQuest programa;
        programa = new LegoQuest();
        programa.run();  
@@ -28,6 +24,6 @@ public class LegoQuest {
         }
         if(opcion == 2){           
         }
->>>>>>> main
+
     }
 }
