@@ -2,11 +2,22 @@ package legoquest;
 import java.io.*;
 class writer {
     static void writer(Toy[] toys){
+<<<<<<< HEAD
         try{
             File old = new File("PruebasPracticaIvanAndres.txt");
             old.delete();
             }catch (Exception e){           
         }
+=======
+        
+        try{
+            File old = new File("PruebasPracticaIvanAndres.txt");
+            old.delete();
+        }catch (Exception e){
+            
+        }
+        
+>>>>>>> main
         String content = "";
         for(int i=0; i<toys.length; i++){
           
