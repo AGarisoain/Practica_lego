@@ -6,14 +6,13 @@ public class LegoQuest {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int opcion;
-        
+        int submenu; 
         do{
              System.out.println("Escoja una opción:");
              System.out.println("1-Elegir Jugetes");
              System.out.println("2-Adivinar Jugetes");
              System.out.println("3-Salir del programa.");
              opcion = sc.nextInt();
-
             switch (opcion){
                 case 1:
                     int juguetes;
@@ -21,23 +20,31 @@ public class LegoQuest {
                     juguetes = sc.nextInt();
                     Toy[] toys = new Toy[juguetes];
                     recordToys(toys);
-                    writer.writer(toys);
-                    
-                    
+                        System.out.println("En que formato lo quieres extraer?");
+                        System.out.println("1-Txt");
+                        System.out.println("2-XML");
+                        System.out.println("3-");
+                        submenu = sc.nextInt();
+                            switch (submenu){
+                               case 1:
+                                    writer.writer(toys);
+                               break;
+                               case 2:
+                                    writerXML.writer(toys);
+                               break;
+                               case 3:
+                                   
+                               break;                    
+                            }                  
                     break;
-                case 2:
-                    String name;
-                    System.out.println("¿Como se llama el archivo?");
-                    name = sc.next();
-                    
-                    reader.bufRead(name);
+                case 2:              
+                    reader.bufRead("PruebasPracticaIvanAndres.txt");
 
                     break;
                 case 3:
 
                     break;
                 default:
-
             }
         }while(opcion != 3);
     }
@@ -181,5 +188,4 @@ public class LegoQuest {
             }
         }
     }
-
 }

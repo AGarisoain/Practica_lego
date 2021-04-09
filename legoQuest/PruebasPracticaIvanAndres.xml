@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jugetes>
+	<jugete>
+		<lego>true</lego>
+		<color>Blanco</color>
+		<simple>true</simple>
+		<descripcion>null</descripcion>
+		<baseMasPequeñaQueTecho>false</baseMasPequeñaQueTecho>
+		<altura>10</altura>
+		<anclajesSuperiores>5</anclajesSuperiores>
+		<anclajesInferiores>4</anclajesInferiores>
+		<vehiculo>false</vehiculo>
+		<ruedas>null</ruedas>
+		<tipoDeVehiculo>null</tipoDeVehiculo>
+		<rostro>false</rostro>
+		<patas>null</patas>
+		<forma>null</forma>
+		<nombre>null</nombre>
+		<piezas>false</piezas>
+	</jugete>
+</jugetes>

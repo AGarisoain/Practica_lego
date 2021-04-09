@@ -27,8 +27,6 @@ class reader {
             content.close();
         } catch (IOException e){
             System.out.println("Archivo no encontrado");
-        }
-        
-    }
-    
+        }  
+    }  
 }
