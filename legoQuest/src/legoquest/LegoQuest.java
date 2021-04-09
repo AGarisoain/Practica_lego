@@ -16,7 +16,11 @@ public class LegoQuest {
 
             switch (opcion){
                 case 1:
-                    recordToys();
+                    int juguetes;
+                    System.out.println("Cuantos juguetes hay?");
+                    juguetes = sc.nextInt();
+                    Toy[] toys = new Toy[juguetes];
+                    recordToys(toys);
                     
                     break;
                 case 2:
@@ -66,15 +70,10 @@ public class LegoQuest {
     
     */
 
-    private static void recordToys() {
+    private static void recordToys(Toy toys[]) {
         Scanner sc = new Scanner(System.in);
-        int juguetes;
         char answer;
         
-        System.out.println("Cuantos juguetes hay?");
-        juguetes = sc.nextInt();
-        Toy[] toys = new Toy[juguetes];
-
         for(int i=0; i<toys.length; i++){
             System.out.println("Es un lego? (s:si n:no)");
             answer = sc.next().charAt(0);
