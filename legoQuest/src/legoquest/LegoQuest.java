@@ -153,6 +153,7 @@ public class LegoQuest {
         numero de anclajes superiores?
         numero de anclajes inferiores?
         }
+<<<<<<< Updated upstream
     es un vehiculo?{
         color/es?
         numero de ruedas?
@@ -163,6 +164,8 @@ public class LegoQuest {
         numero de patas?
         forma?
         nombre?
+=======
+>>>>>>> Stashed changes
     }
     forma?
     color?
