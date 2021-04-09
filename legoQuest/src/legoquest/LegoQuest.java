@@ -20,22 +20,26 @@ public class LegoQuest {
                     juguetes = sc.nextInt();
                     Toy[] toys = new Toy[juguetes];
                     recordToys(toys);
-                        System.out.println("En que formato lo quieres extraer?");
-                        System.out.println("1-Txt");
-                        System.out.println("2-XML");
-                        System.out.println("3-");
-                        submenu = sc.nextInt();
-                            switch (submenu){
-                               case 1:
-                                    writer.writer(toys);
-                               break;
-                               case 2:
-                                    writerXML.writer(toys);
-                               break;
-                               case 3:
-                                   
-                               break;                    
-                            }                  
+                    System.out.println("En que formato lo quieres extraer?");
+                    System.out.println("1-Txt");
+                    System.out.println("2-XML");
+                    System.out.println("3-");
+                    submenu = sc.nextInt();
+                    switch (submenu){
+                       case 1:
+                            writer.writer(toys);
+                       break;
+                       case 2:
+                            writerXML.writer(toys);
+                       break;
+                       case 3:
+
+                       break;                    
+                    }                  
+
+                    writer.writer(toys);
+                    
+
                     break;
                 case 2:              
                     reader.bufRead("PruebasPracticaIvanAndres.txt");
@@ -59,7 +63,6 @@ public class LegoQuest {
         numero de anclajes superiores?
         numero de anclajes inferiores?
         }
-<<<<<<< Updated upstream
     es un vehiculo?{
         color/es?
         numero de ruedas?
@@ -70,8 +73,6 @@ public class LegoQuest {
         numero de patas?
         forma?
         nombre?
-=======
->>>>>>> Stashed changes
     }
     forma?
     color?
