@@ -7,50 +7,48 @@ public class LegoQuest {
         Scanner sc = new Scanner(System.in);
         int opcion;
         int submenu; 
-        do{
-             System.out.println("Escoja una opción:");
-             System.out.println("1-Elegir Jugetes");
-             System.out.println("2-Adivinar Jugetes");
-             System.out.println("3-Salir del programa.");
-             opcion = sc.nextInt();
-            switch (opcion){
-                case 1:
-                    int juguetes;
-                    System.out.println("Cuantos juguetes hay?");
-                    juguetes = sc.nextInt();
-                    Toy[] toys = new Toy[juguetes];
-                    recordToys(toys);
-                    System.out.println("En que formato lo quieres extraer?");
-                    System.out.println("1-Txt");
-                    System.out.println("2-XML");
-                    System.out.println("3-");
-                    submenu = sc.nextInt();
-                    switch (submenu){
-                       case 1:
-                            writer.writer(toys);
-                       break;
-                       case 2:
-                            writerXML.writer(toys);
-                       break;
-                       case 3:
+        System.out.println("Escoja una opción:");
+        System.out.println("1-Elegir Jugetes");
+        System.out.println("2-Adivinar Jugetes");
+        System.out.println("3-Salir del programa.");
+        opcion = sc.nextInt();
+        switch (opcion){
+            case 1:
+                int juguetes;
+                System.out.println("Cuantos juguetes hay?");
+                juguetes = sc.nextInt();
+                Toy[] toys = new Toy[juguetes];
+                recordToys(toys);
+                System.out.println("En que formato lo quieres extraer?");
+                System.out.println("1-Txt");
+                System.out.println("2-XML");
+                System.out.println("3-");
+                submenu = sc.nextInt();
+                switch (submenu){
+                   case 1:
+                        writer.writer(toys);
+                   break;
+                   case 2:
+                        writerXML.writer(toys);
+                   break;
+                   case 3:
 
-                       break;                    
-                    }                  
+                   break;                    
+                }                  
 
-                    writer.writer(toys);
-                    
+                writer.writer(toys);
 
-                    break;
-                case 2:              
-                    reader.bufRead("PruebasPracticaIvanAndres.txt");
 
-                    break;
-                case 3:
+                break;
+            case 2:              
+                reader.bufRead("PruebasPracticaIvanAndres.txt");
 
-                    break;
-                default:
-            }
-        }while(opcion != 3);
+                break;
+            case 3:
+
+                break;
+            default:
+        }
     }
 /*
     preguntas para identificar los objetos:
