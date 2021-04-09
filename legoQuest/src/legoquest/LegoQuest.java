@@ -72,6 +72,11 @@ public class LegoQuest {
         char answer;
         
         for(int i=0; i<toys.length; i++){
+            Toy juguete = new Toy();
+            toys[i] = juguete;
+        }
+        
+        for(int i=0; i<toys.length; i++){
             System.out.println("Es un lego? (s:si n:no)");
             answer = sc.next().charAt(0);
 
