@@ -22,7 +22,7 @@ public class LegoQuest {
                 System.out.println("En que formato lo quieres extraer?");
                 System.out.println("1-Txt");
                 System.out.println("2-XML");
-                System.out.println("3-");
+                System.out.println("3-Binario");
                 submenu = sc.nextInt();
                 switch (submenu){
                    case 1:
@@ -32,7 +32,7 @@ public class LegoQuest {
                         writerXML.writer(toys);
                    break;
                    case 3:
-
+                       writerbinario.writer(toys);
                    break;                    
                 }                  
 
