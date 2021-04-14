@@ -19,7 +19,7 @@ public class LegoQuest {
                 juguetes = sc.nextInt();
                 Toy[] toys = new Toy[juguetes];
                 recordToys(toys);
-                System.out.println("En que formato lo quieres extraer?");
+                System.out.println("En que formato lo quieres escribir?");
                 System.out.println("1-Txt");
                 System.out.println("2-XML");
                 System.out.println("3-Binario");
@@ -36,12 +36,28 @@ public class LegoQuest {
                    break;                    
                 }                  
 
-                writer.writer(toys);
 
 
                 break;
-            case 2:              
-                reader.bufRead("PruebasPracticaIvanAndres.txt");
+            case 2:
+                System.out.println("En que formato lo quieres leer?");
+                System.out.println("1-Txt");
+                System.out.println("2-XML");
+                System.out.println("3-");
+                submenu = sc.nextInt();
+                switch (submenu){
+                   case 1:
+                        reader.bufRead("PruebasPracticaIvanAndres.txt");
+                   break;
+                   case 2:
+                        readerXML.reader("PruebasPracticaIvanAndres.xml");
+                   break;
+                   case 3:
+
+                   break;                    
+                }
+                
+                
 
                 break;
             case 3:

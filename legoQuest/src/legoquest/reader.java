@@ -24,6 +24,7 @@ class reader {
             BufferedReader mybuffer = new BufferedReader(content);
             
             while(line!=null){
+                char answer;
                 boolean lego;
                 boolean vehicle;
                 boolean face;
@@ -149,7 +150,7 @@ class reader {
                 
                 if (!lego && !face && !vehicle){                                    //si no es ni lego ni vehiculo ni tiene cara
                     System.out.println("Es de color " + color);
-                    System.out.println("El juguete tiene forma de " + shape);
+                    System.out.println("El juguete tiene forma: " + shape);
                 }
                 
                 line = mybuffer.readLine();                                         //lee las piezas
@@ -162,6 +163,15 @@ class reader {
                     
                 }else{
                     System.out.println("Ha habido un error en la lectura, hay mas lineas de las esperadas en un juguete");
+                    break;
+                }
+                
+                System.out.println("¿Siguiente juguete? (s: si, [other]: exit)");
+                answer = sc.next().charAt(0);
+
+                if(answer == 's' || answer == 'S'){
+
+                }else{
                     break;
                 }
                 
