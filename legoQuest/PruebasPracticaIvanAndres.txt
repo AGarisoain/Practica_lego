@@ -1,12 +1,12 @@
 {
 true
-Negro
+verde-rojo
 true
 null
 false
-10
-5
-5
+2
+3
+3
 false
 null
 null

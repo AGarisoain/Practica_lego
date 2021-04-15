@@ -2,11 +2,11 @@
 <jugetes>
 	<jugete>
 		<lego>true</lego>
-		<color>verde</color>
-		<simple>true</simple>
-		<descripcion>null</descripcion>
-		<baseMasPequeñaQueTecho>false</baseMasPequeñaQueTecho>
-		<altura>4</altura>
+		<color>gfwqerg</color>
+		<simple>false</simple>
+		<descripcion>reger</descripcion>
+		<baseMasPequeñaQueTecho>true</baseMasPequeñaQueTecho>
+		<altura>3</altura>
 		<anclajesSuperiores>4</anclajesSuperiores>
 		<anclajesInferiores>4</anclajesInferiores>
 		<vehiculo>false</vehiculo>
@@ -20,25 +20,7 @@
 	</jugete>
 	<jugete>
 		<lego>false</lego>
-		<color>blanco</color>
-		<simple>false</simple>
-		<descripcion>null</descripcion>
-		<baseMasPequeñaQueTecho>false</baseMasPequeñaQueTecho>
-		<altura>null</altura>
-		<anclajesSuperiores>null</anclajesSuperiores>
-		<anclajesInferiores>null</anclajesInferiores>
-		<vehiculo>true</vehiculo>
-		<ruedas>3</ruedas>
-		<tipoDeVehiculo>camion</tipoDeVehiculo>
-		<rostro>false</rostro>
-		<patas>null</patas>
-		<forma>null</forma>
-		<nombre>null</nombre>
-		<piezas>false</piezas>
-	</jugete>
-	<jugete>
-		<lego>false</lego>
-		<color>azul</color>
+		<color>ghjgsh</color>
 		<simple>false</simple>
 		<descripcion>null</descripcion>
 		<baseMasPequeñaQueTecho>false</baseMasPequeñaQueTecho>
@@ -49,9 +31,9 @@
 		<ruedas>null</ruedas>
 		<tipoDeVehiculo>null</tipoDeVehiculo>
 		<rostro>true</rostro>
-		<patas>2</patas>
-		<forma>humana</forma>
-		<nombre>Bendy</nombre>
+		<patas>4</patas>
+		<forma>sngfsh</forma>
+		<nombre>no</nombre>
 		<piezas>false</piezas>
 	</jugete>
 </jugetes>

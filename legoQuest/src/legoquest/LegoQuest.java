@@ -128,7 +128,7 @@ public class LegoQuest {
                 }else{
                     toys[i].simple = false;
 
-                    System.out.println("Breve descripcion:");
+                    System.out.println("Breve descripcion: (una palabra)");
                     toys[i].descripcion = sc.next();
 
                     System.out.println("La base es más pequeña que el techo? (s:si n:no)");

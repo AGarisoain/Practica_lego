@@ -18,23 +18,24 @@ class ReaderBinario {
                array.add(binario);
                binario = (Toy)lectura.readObject();
             }
-         }
-        catch (IOException | ClassNotFoundException ex){
+            conductorentrada.close();
+            lectura.close();
+         }catch (IOException | ClassNotFoundException ex){
         }
         for(int i=0; i<array.size(); i++){
             System.out.println("--------------------------------");
             System.out.println("        NUEVO JUGUETE");
             if (array.get(i).lego == true){
                     System.out.println("El juguete es una pieza de lego");
-            }
-            else if (array.get(i).lego == false){
+            }else if (array.get(i).lego == false){
                     System.out.println("El juguete NO es una pieza de lego");
             }
+            
             if (array.get(i).lego == true){
                     System.out.println("Es de color " + array.get(i).color);
             }
             
-            if (array.get(i).simple == true){
+            if (array.get(i).lego == true && array.get(i).simple == true){
                 System.out.println("La pieza es simple");  
             }
             else if (array.get(i).simple == false){
