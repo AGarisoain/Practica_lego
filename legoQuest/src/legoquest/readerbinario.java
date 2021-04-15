@@ -1,9 +1,12 @@
 package legoquest;
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 class ReaderBinario {
     static void readerbinario(String args) {              
+        char answer;
+        Scanner sc = new Scanner(System.in);
         Toy binario;
         FileInputStream conductorentrada = null; 
         ArrayList<Toy> array = array = new ArrayList<Toy>();
@@ -88,8 +91,19 @@ class ReaderBinario {
                 System.out.println("Es de color " + array.get(i).color);
                 System.out.println("El juguete tiene forma: " + array.get(i).forma);
             }
-            if (array.get(i).lego == false && array.get(i).vehiculo == false && array.get(i).rostro == false){
-                System.out.println("El juguete tiene " + array.get(i).piezas + " pieza/s");
+            if (array.get(i).lego == false && array.get(i).vehiculo == false && array.get(i).rostro == false && array.get(i).piezas == true){
+                System.out.println("El juguete tiene varias piezas");
+            }else if (array.get(i).lego == false && array.get(i).vehiculo == false && array.get(i).rostro == false){
+                System.out.println("El juguete es una unica pieza");
+            }
+            
+            System.out.println("¿Siguiente juguete? (s: si, [other]: exit)");
+            answer = sc.next().charAt(0);
+
+            if(answer == 's' || answer == 'S'){
+
+            }else{
+                break;
             }
         }
     }  

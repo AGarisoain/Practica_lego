@@ -23,20 +23,22 @@ public class LegoQuest {
                 System.out.println("1-Txt");
                 System.out.println("2-XML");
                 System.out.println("3-Binario");
+                System.out.println("4-JSON");
                 submenu = sc.nextInt();
                 switch (submenu){
-                   case 1:
+                    case 1:
                         writer.writer(toys);
-                   break;
-                   case 2:
+                        break;
+                    case 2:
                         writerXML.writer(toys);
-                   break;
-                   case 3:
-                       WriterBinario.writerbinario(toys);
-                   break;                    
+                        break;
+                    case 3:
+                        writerBinario.writerbinario(toys);
+                        break;     
+                    case 4:
+                        writerJSON.writer(toys);
+                        break;
                 }                  
-
-
 
                 break;
             case 2:
@@ -44,10 +46,11 @@ public class LegoQuest {
                 System.out.println("1-Txt");
                 System.out.println("2-XML");
                 System.out.println("3-Binario");
+                System.out.println("4-JSON");
                 submenu = sc.nextInt();
                 switch (submenu){
                    case 1:
-                        reader.bufRead("Bin.txt");
+                        reader.bufRead("PruebasPracticaIvanAndres.txt");
                    break;
                    case 2:
                         readerXML.reader("PruebasPracticaIvanAndres.xml");
@@ -55,6 +58,9 @@ public class LegoQuest {
                    case 3:
                        ReaderBinario.readerbinario("PruebasPracticaIvanAndresBinario.txt");
                    break;                    
+                   case 4:
+                       readerJSON.reader("juguetes.json");
+                   break;
                 }
                 
                 
@@ -190,7 +196,7 @@ public class LegoQuest {
                         System.out.println("De que color/es es?");
                         toys[i].color = sc.next();
 
-                        System.out.println("Tiene varias piezas?");
+                        System.out.println("Tiene varias piezas?  (s:si n:no)");
                         answer = sc.next().charAt(0);
 
                         if (answer == 's' || answer == 'S'){

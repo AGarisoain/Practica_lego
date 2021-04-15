@@ -134,8 +134,10 @@ class readerXML {
                         System.out.println("El juguete tiene forma de " + eElement.getElementsByTagName("forma").item(0).getTextContent());
                     }
                     
-                    if (!lego && !face && !vehicle){ //pone las piezas
-                        System.out.println("El juguete tiene " + eElement.getElementsByTagName("piezas").item(0).getTextContent() + " pieza/s");
+                    if (!lego && !face && !vehicle && eElement.getElementsByTagName("piezas").item(0).getTextContent().equals("true")){ //pone las piezas
+                        System.out.println("El juguete tiene varias piezas");
+                    }else{
+                        System.out.println("El juguete es una unica pieza");
                     }
                     
                     System.out.println("¿Siguiente juguete? (s: si, [other]: exit)");
@@ -149,7 +151,7 @@ class readerXML {
                         
                 }
             }
-            
+
         }catch(ParserConfigurationException | SAXException | IOException e){
             System.out.println("Algo ha salido mal");
         }
