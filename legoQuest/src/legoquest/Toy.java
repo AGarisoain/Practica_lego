@@ -5,11 +5,13 @@
  */
 package legoquest;
 
+import java.io.Serializable;
+
 /**
  *
  * @author tarda
  */
-class Toy {
+class Toy implements Serializable{
     boolean lego;
     String color;
     boolean simple;

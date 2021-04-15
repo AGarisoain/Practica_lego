@@ -7,14 +7,7 @@ class writer {
             old.delete();
             }catch (Exception e){           
         }
-        
-        try{
-            File old = new File("PruebasPracticaIvanAndres.txt");
-            old.delete();
-        }catch (Exception e){
-            
-        }
-        
+                
         String content = "";
         for(int i=0; i<toys.length; i++){
         content = content + "{" + "\n" + toys[i].lego + "\n";
