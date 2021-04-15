@@ -32,7 +32,7 @@ public class LegoQuest {
                         writerXML.writer(toys);
                    break;
                    case 3:
-                       writerbinario.writer(toys);
+                       WriterBinario.writerbinario(toys);
                    break;                    
                 }                  
 
@@ -43,17 +43,17 @@ public class LegoQuest {
                 System.out.println("En que formato lo quieres leer?");
                 System.out.println("1-Txt");
                 System.out.println("2-XML");
-                System.out.println("3-");
+                System.out.println("3-Binario");
                 submenu = sc.nextInt();
                 switch (submenu){
                    case 1:
-                        reader.bufRead("PruebasPracticaIvanAndres.txt");
+                        reader.bufRead("Bin.txt");
                    break;
                    case 2:
                         readerXML.reader("PruebasPracticaIvanAndres.xml");
                    break;
                    case 3:
-
+                       ReaderBinario.readerbinario("PruebasPracticaIvanAndresBinario.txt");
                    break;                    
                 }
                 
